@@ -43,11 +43,11 @@
                         <a class="collapsible-header">Admin<i class="material-icons"></i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a class="waves-effect waves-light btn" href="~/product_manager/index.php">Manage Products</a></li>
-                                <li><a class="waves-effect waves-light btn" href="~/technician_manager/index.php">Manage Technicians</a></li>
-                                <li><a class="waves-effect waves-light btn" href="~/under_construction.php">Manage Customers</a></li>
-                                <li><a class="waves-effect waves-light btn" href="~/under_construction.php">Create Incident</a></li>
-                                <li><a class="waves-effect waves-light btn" href="~/under_construction.php"">Assign Incident</a></li>
+                                <li><a class="waves-effect waves-light btn" href="/product_manager/index.php">Manage Products</a></li>
+                                <li><a class="waves-effect waves-light btn" href="/technician_manager/index.php">Manage Technicians</a></li>
+                                <li><a class="waves-effect waves-light btn" href="/under_construction.php">Manage Customers</a></li>
+                                <li><a class="waves-effect waves-light btn" href="/under_construction.php">Create Incident</a></li>
+                                <li><a class="waves-effect waves-light btn" href="/under_construction.php"">Assign Incident</a></li>
                                 <li><a class="waves-effect waves-light btn" href="~/under_construction.php">Display Incidents</a></li>
                             </ul>
                         </div>
@@ -68,7 +68,7 @@
                         <a class="collapsible-header">Customer<i class="material-icons"></i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a  class="waves-effect waves-light btn"  href="~/tech_support/register_product/index.php">Register Product</a></li>
+                                <li><a  class="waves-effect waves-light btn"  href="/register_product/index.php">Register Product</a></li>
 
                             </ul>
                         </div>
@@ -108,9 +108,9 @@
             </ul>
 
             <ul id='dropdownAdmin' class='dropdown-content'>
-                <li><a href="product_manager/index.php">Manage Products</a></li>
-                <li><a href="technician_manager/index.php">Manage Technicians</a></li>
-                <li><a href="customer_manager/index.php">Manage Customers</a></li>
+                <li><a href="/product_manager/index.php">Manage Products</a></li>
+                <li><a href="/technician_manager/index.php">Manage Technicians</a></li>
+                <li><a href="/customer_manager/index.php">Manage Customers</a></li>
                 <li><a href="/incident_manager/index.php">Create Incident</a></li>
                 <li><a href="under_construction.php"">Assign Incident</a></li>
                 <li><a href="under_construction.php">Display Incidents</a></li>
