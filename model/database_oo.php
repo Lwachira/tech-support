@@ -2,7 +2,7 @@
 class Database {
     private static $dsn = 'mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=tech_support';
     private static $username = 'bc1bf7e6d41868@40.122.124.194';
-    private static $password = 'cd92c7b7';
+    private static $password = '94533f7b';
     private static $db;
 
     function __construct(){}
