@@ -1,6 +1,6 @@
 <?php
     $dsn = 'mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=tech_support';
-    $username = 'bc1bf7e6d41868@40.122.124.194';
+    $username = 'bc1bf7e6d41868';
     $password = '94533f7b';
 
     try {
