@@ -13,7 +13,7 @@
     <!--   <link rel="stylesheet" type="text/css"
               href="main.css">-->
 
-    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen,projection">
+    <link rel="stylesheet" href="/style/style.css" type="text/css" media="screen,projection">
 </head>
 
 <!-- the body section -->
