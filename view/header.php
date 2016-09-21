@@ -103,7 +103,7 @@
 
             <ul id='dropdownHome' class='dropdown-content'>
 
-                <li><a href="/tech_support/">Home</a></li>
+                <li><a href="/">Home</a></li>
 
             </ul>
 

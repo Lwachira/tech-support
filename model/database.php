@@ -1,7 +1,7 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=tech_support';
-    $username = 'ts_user';
-    $password = 'pa55word';
+    $dsn = 'mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=tech_support';
+    $username = 'bc1bf7e6d41868';
+    $password = 'cd92c7b7';
 
     try {
         $db = new PDO($dsn, $username, $password);
