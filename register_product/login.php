@@ -8,7 +8,7 @@
         <input type='hidden' name='action'
                value='verify_email' />
         <input type='text' name='email' />
-        <input type='submit' value='Login' />
+        <input type='submit' value='Login' class="waves-effect waves-light btn" />
     </form>
 </div>
 
