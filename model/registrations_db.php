@@ -18,3 +18,12 @@ function get_registered_products($customerID)
     return $registered_products;
 }
 
+function get_registrated_products_by_customer($customerID) {
+    global $db;
+    $query = "SELECT * FROM registrations
+			  	INNER JOIN products
+			  	ON registrations.productCode = products.productCode
+			  WHERE customerID = $customerID";
+    $products = $db->query($query);
+    return $products;
+}

@@ -1,14 +1,13 @@
 <?php
 
-function add_incident($customerID, $product_code, $techID, $open_date, $title, $description) {
-	global $db;
-	$title = mysql_real_escape_string($title);
-	$description = mysql_real_escape_string($description);
-	$query = "INSERT INTO incidents
-			  (customerID, productCode, techID, dateOpened, title, description)
-			  VALUES
+function add_incident($customerID, $product_code, $title, $description)
+{
+    global $db;
+    $date = date('Y-m-d');
+    $query = "INSERT INTO incidents (customerID, productCode, techID, dateOpened, title, description)
+              VALUES
 			  ($customerID, '$product_code', $techID, '$open_date', '$title', '$description')";
-	$db->exec($query);
+    $db->query($query);
 }
 
 function get_unassigned_incident()
