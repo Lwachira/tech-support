@@ -10,3 +10,10 @@
         include('../errors/database_error.php');
         exit();
     }
+
+function display_db_error($error_message) {
+    global $app_path;
+    include '../errors/database_error.php';
+    exit();
+}
+
