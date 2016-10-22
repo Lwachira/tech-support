@@ -8,6 +8,24 @@ function get_customers() {
     return $customers;
 }
 
+function get_customers_by_lastname($last_name) {
+    global $db;
+    $query = "SELECT * FROM customers
+			  WHERE lastName = '$last_name'
+			  ORDER BY customerID";
+    $customers = $db->query($query);
+    return $customers;
+}
+
+function get_customer_by_email($email) {
+    global $db;
+    $query = "SELECT * FROM customers
+			  WHERE email = '$email'";
+    $customers = $db->query($query);
+    $customer = $customers->fetch();
+    return $customer;
+}
+
 function search_by_last_name($last_name) {
     global $db;
     $query = "SELECT * FROM customers
@@ -66,6 +84,7 @@ function add_customer($customerID, $first_name, $last_name,
               WHERE customerID = '$customerID'";
     $db->exec($query);
 }
+
 
 function is_valid_customer_login($email) {
     global $db;
