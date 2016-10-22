@@ -66,3 +66,20 @@ function add_customer($customerID, $first_name, $last_name,
               WHERE customerID = '$customerID'";
     $db->exec($query);
 }
+
+function is_valid_customer_login($email) {
+    global $db;
+    $query = 'SELECT * FROM customers
+              WHERE email = :email';
+    try {
+        $statement = $db->prepare($query);
+        $statement->bindValue(':email', $email);
+        $statement->execute();
+        $valid = ($statement->rowCount() == 1);
+        $statement->closeCursor();
+        return $valid;
+    } catch (PDOException $e) {
+        $error_message = $e->getMessage();
+        display_db_error($error_message);
+    }
+}
