@@ -1,6 +1,5 @@
 <?php include('../view/header.php'); ?>
-
- <div class="section no-pad-bot">
+    <div class="section no-pad-bot">
         <div class="container">
             <div id='main'>
                 <h3>Customer Login</h3>
