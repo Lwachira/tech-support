@@ -24,6 +24,8 @@ else if ($action == 'search_customers') {
 }
 
 else if ($action == 'select_customer') {
+    $display_button_value = "Update Customer";
+    $display_button_name = "Update Customer";
     $customerID = $_POST['customerID'];
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
@@ -41,6 +43,8 @@ else if ($action == 'select_customer') {
 
 
 else if ($action == 'update_customer') {
+    $display_button_value = "Update Customer";
+    $display_button_name = "Update Customer";
     $customerID = $_POST['customerID'];
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
@@ -59,18 +63,21 @@ else if ($action == 'update_customer') {
 }
 
 else if ($action == 'add_customer') {
-        $customerID = $_POST['customerID'];
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $address = $_POST['address'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $postal_code = $_POST['postal_code'];
-    $country_code = $_POST['country_code'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $display_button_value = "Add Customer";
+    $display_button_name = "Add Customer";
+
+    $customerID = '';
+    $first_name = '';
+    $last_name = '';
+    $address = '';
+    $city = '';
+    $state ='';
+    $postal_code = '';
+    $country_code = '';
+    $phone = '';
+    $email = '';
+    $password = '';
     $countries = get_countries();
     include("edit_customer.php");
-    
+
 }

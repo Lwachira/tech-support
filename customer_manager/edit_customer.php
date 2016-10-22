@@ -93,7 +93,7 @@
                 <label for="password">Password:</label>
             </div>
             <div class="input-field col s6">
-                <input type='submit' class="waves-effect waves-light btn" value='Update Customer'/>
+                <input type='submit' name='<?=$display_button_name;?>' class='waves-effect waves-light btn' value='<?=$display_button_value;?>' />
 
             </div>
         </form>
