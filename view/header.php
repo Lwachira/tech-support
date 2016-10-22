@@ -126,7 +126,7 @@
             </ul>
 
             <ul id='dropdownCust' class='dropdown-content'>
-                <li><a href="/product_register/index.php">Register Product</a></li>
+                <li><a href="/register_product/index.php">Register Product</a></li>
             </ul>
 
         </ul>
