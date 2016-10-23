@@ -1,7 +1,8 @@
 <?php include('../view/header.php'); ?>
+
     <div class="section no-pad-bot">
         <div class="container">
-            <div id='main'>
+            
                 <h3>Customer Login</h3>
                 <p>You must login before you can register a product.</p>
                 <form action='.' method='post'>
@@ -11,7 +12,7 @@
                     <input type='text' name='email'/>
                     <input type='submit' value='Login' class="waves-effect waves-light btn"/>
                 </form>
-            </div>
+            
         </div>
     </div>
 
